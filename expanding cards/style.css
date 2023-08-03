@@ -27,9 +27,9 @@
 
 }
 
-.panel.active {
+/* .panel.active {
     flex: 5;
-}
+} */
 
 .panel h3 {
     font-size: 24px;
@@ -44,6 +44,6 @@
     opacity: 1;
 }
 
-div:active {
+/* div:active {
     flex: 5;
-}
+} */
