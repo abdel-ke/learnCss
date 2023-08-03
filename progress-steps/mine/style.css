@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    width: 6.5vh;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh;
+}
+
+.line {
+    width: 7vh;
+    height: 4px;
+    background-color: #e0e0e0;
+    /* transition: 2s; */
+}
+
+.number {
+    border: 3px solid #e0e0e0;
+    width: 10%;
+
+    border-radius: 100%;
+    font-size: 24px;
+}
+
+.number.active {
+    border-color: #3498db;
+}
+
+.btn.active {
+    background-color: #3498db;
+}
