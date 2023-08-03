@@ -1,11 +1,14 @@
-// document.querySelectorAll('.panel').addEventListener('click', () => {
-// 	alert("im here");
-// });
+const panels = document.querySelectorAll('.panel');
 
-document.querySelectorAll(".panel").forEach((occurence) => {
-  occurence.addEventListener("click", (e) => {
-    // console.log("A link was clicked");
-	// alert(e);
-	e.style.flex = 5;
-  });
-});
+panels.forEach(panel => {
+  panel.addEventListener('click', () => {
+    removeActiveClasses();
+    panel.classList.add('active');
+  })
+})
+
+function removeActiveClasses(){
+  panels.forEach(panel => {
+    panel.classList.remove('active');
+  })
+}
