@@ -30,6 +30,7 @@ function checkBtn() {
     {
         prevBtn.style.backgroundColor = skyBlue;
         nextBtn.style.backgroundColor = skyBlue;
+        prev.disabled = false;
     }
     if (pos == 1)
     {
