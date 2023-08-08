@@ -1,5 +1,6 @@
 const skyBlue = "#3498db";
 const gray = "#e0e0e0";
+
 let pos = 1;
 let posLine = 0;
 let number = document.getElementsByClassName("number");
@@ -11,35 +12,36 @@ function Next() {
     console.log(pos)
     if (pos > 3 || pos < 0)
         return;
-        number[pos++].style.borderColor = skyBlue;
-        line[posLine++].style.backgroundColor = skyBlue;
-        checkBtn();
+    number[pos++].style.borderColor = skyBlue;
+    line[posLine++].style.backgroundColor = skyBlue;
+    checkBtn();
 }
 
 function Prev() {
     console.log(pos)
     if (pos > 4 || pos <= 1)
         return;
-        number[--pos].style.borderColor = gray;
-        line[--posLine].style.backgroundColor = gray;
-        checkBtn();
+    number[--pos].style.borderColor = gray;
+    line[--posLine].style.backgroundColor = gray;
+    checkBtn();
 }
 
 function checkBtn() {
-    if (pos >= 1 && pos < 4)
-    {
+    if (pos >= 1 && pos < 4) {
         prevBtn.style.backgroundColor = skyBlue;
         nextBtn.style.backgroundColor = skyBlue;
-        prev.disabled = false;
+        // prevBtn.disabled = false;
+        // nextBtn.disabled = false;
     }
-    if (pos == 1)
-    {
+    if (pos == 1) {
         prevBtn.style.backgroundColor = gray;
         nextBtn.style.backgroundColor = skyBlue;
+        // prevBtn.disabled = true;
+        // prevBtn.style.cursor = notAllowed
     }
-    if (pos == 4)
-    {
+    if (pos == 4) {
         prevBtn.style.backgroundColor = skyBlue;
         nextBtn.style.backgroundColor = gray;
+        // nextBtn.disabled = true;
     }
 }
